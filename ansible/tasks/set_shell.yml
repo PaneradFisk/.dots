@@ -1,0 +1,6 @@
+---
+- name: Ensure ZSH is set as shell for andreb
+  ansible.builtin.user:
+    name: "andreb"
+    shell: "/usr/bin/zsh"
+  become: true

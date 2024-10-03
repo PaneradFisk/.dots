@@ -1,0 +1,42 @@
+# settings
+show-read-feeds no
+refresh-on-startup yes
+browser "firefox %u"
+save-path /home/andreb/.newsboat/saved-articles/
+
+
+# keybinds
+unbind-key J
+unbind-key j
+unbind-key K
+unbind-key k
+bind-key J next-feed
+bind-key j down
+bind-key K prev-feed
+bind-key k up
+
+# hacks
+highlight feedlist "---.*---" color13 default bold
+highlight feedlist ".*0/0.." default default invis
+
+# colors
+## theme is catppucccin dark
+## found at https://github.com/catppuccin/newsboat
+color listnormal         color15 default
+color listnormal_unread  color2  default
+color listfocus_unread   color2  color0
+color listfocus          default color0
+color background         default default
+color article            default default
+color end-of-text-marker color8  default
+color info               color4  color8
+color hint-separator     default color8
+color hint-description   default color8
+color title              color14 color8
+
+highlight article "^(Feed|Title|Author|Link|Date): .+" color4 default bold
+highlight article "^(Feed|Title|Author|Link|Date):" color14 default bold
+
+highlight article "\\((link|image|video)\\)" color8 default
+highlight article "https?://[^ ]+" color4 default
+highlight article "\[[0-9]+\]" color6 default bold

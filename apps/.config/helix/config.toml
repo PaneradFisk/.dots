@@ -1,0 +1,42 @@
+theme = "catppuccin_frappe"
+
+[editor]
+scrolloff = 8
+scroll-lines = 1
+line-number = "relative"
+cursorline = true
+mouse = false
+default-line-ending = "lf"
+gutters.layout = ["diff", "line-numbers", "spacer"]
+indent-guides.render = true
+indent-guides.character = "┆"
+indent-guides.skip-levels = 1
+lsp.display-inlay-hints = true
+cursor-shape.insert = "bar"
+
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+separator = "|"
+left = ["mode", "separator", "file-name", "spinner"]
+center = ["read-only-indicator"]
+right = [
+    "separator",
+    "file-modification-indicator",
+    "version-control",
+    "separator",
+    "diagnostics",
+    "selections",
+    "register",
+    "position",
+    "file-encoding",
+]
+
+[keys.normal]
+"ret" = ["open_below", "normal_mode"] # maps RETURN to "create new line"
+
+[keys.insert]
+"C-c" = "normal_mode"
+j = { j = "normal_mode" }

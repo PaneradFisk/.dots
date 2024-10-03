@@ -1,0 +1,5 @@
+---
+- name: Install VSCode extensions via CLI
+  ansible.builtin.command:
+    cmd: code --install-extension "{{ item }}"
+  with_items: "{{ vscode_extensions }}"

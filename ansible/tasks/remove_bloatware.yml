@@ -1,0 +1,6 @@
+---
+- name: Remove Fedora bloatware
+  with_items: "{{ dnf_bloatware }}"
+  ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: absent

@@ -1,0 +1,9 @@
+---
+- name: Remove all DNF cache
+  ansible.builtin.command: dnf clean all
+  register: dnf_clean_output
+  changed_when: dnf_clean_output.stdout != "0 files removed"
+
+- name: Autoremove unneeded packages installed as dependencies
+  ansible.builtin.dnf:
+    autoremove: true

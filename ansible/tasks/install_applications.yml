@@ -1,0 +1,19 @@
+---
+- name: Install DNF applications
+  with_items: "{{ apps_dnf }}"
+  ansible.builtin.dnf:
+    state: present
+    name: "{{ item }}"
+
+- name: Install Flatpak applications
+  with_items: "{{ apps_flatpak }}"
+  community.general.flatpak:
+    name: "{{ item }}"
+
+- name: Install Cargo applications
+  with_items: "{{ apps_cargo }}"
+  community.general.cargo:
+    state: present
+    name: "{{ item }}"
+  environment:
+    PATH: "/home/andreb/.cargo/bin:{{ ansible_env.PATH }}"

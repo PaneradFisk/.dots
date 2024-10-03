@@ -1,0 +1,24 @@
+---
+- name: Create directories
+  with_items: "{{ local_path_dirs }}"
+  ansible.builtin.file:
+    mode: "0777"
+    owner: andreb
+    path: "{{ item }}"
+    recurse: true
+    state: directory
+# - name: Create dir - development
+#   ansible.builtin.file:
+#     mode: "0777"
+#     owner: andreb
+#     path: "{{ local_path_dir_development }}"
+#     recurse: true
+#     state: directory
+
+# - name: Create dir - .installers
+#   ansible.builtin.file:
+#     mode: "0777"
+#     owner: andreb
+#     path: "{{ local_path_dir_installers }}"
+#     recurse: true
+#     state: directory
