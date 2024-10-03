@@ -4,16 +4,20 @@ live_config_reload = false
 
 
 ### start of specific and nested settings
+# [shell]
+# program = "/usr/bin/fish"
+
+
 [env]
 TERM = "xterm-256color"
 
 [window]
-decorations = "None" # Full / None
+decorations = "None"       # Full / None
 opacity = 0.80
 blur = true
-padding = { x = 0, y = 0 }  # x=left+right | y=top+bottom
+padding = { x = 3, y = 0 } # x=left+right | y=top+bottom
 title = "Alacritty"
-# dynamic_padding = true
+
 
 [window.class]
 general = "Alacritty"

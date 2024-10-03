@@ -12,24 +12,26 @@
 
 
 ## current setup
-| Tool                     | Software                                                                                           |
-|--------------------------|----------------------------------------------------------------------------------------------------|
-| browser                  | [firefox](https://www.mozilla.org/en-US/firefox/)                                                   |
-| configuration            | [ansible](https://github.com/ansible/ansible)                                                       |
-| editor                   | [helix](https://github.com/helix-editor/helix) // [vscode](https://code.visualstudio.com/)          |
-| music                    | [cmus](https://github.com/cmus/cmus) // [spotify](https://www.spotify.com)                          |
-| feed reader              | [newsboat](https://github.com/newsboat/newsboat)                                                    |
-| shell                    | [zsh](https://zsh.sourceforge.io/) // [fish](https://github.com/fish-shell/fish-shell)              |
-| terminal                 | [alacritty](https://github.com/alacritty/alacritty)                                                 |
-| terminal multiplexer      | [tmux](https://github.com/tmux/tmux)                                                               |
-| font                     | [fira code](https://github.com/tonsky/FiraCode)                                                     |
-| password manager         | [bitwarden](https://github.com/bitwarden)                                                           |
-| fun typing speed test    | [thokr](https://github.com/jrnxf/thokr)                                                             |
-| cat                      | [bat](https://github.com/sharkdp/bat)                                                              |
-| grep                     | [ripgrep](https://github.com/BurntSushi/ripgrep)                                                    |
-| ls                       | [eza](https://github.com/eza-community/eza)                                                        |
-| tldr                     | [tealdeer](https://github.com/dbrgn/tealdeer)                                                      |
-| top                      | [htop](https://github.com/hishamhm/htop)                                                           |
+| Tool                     | Software                                               |
+|--------------------------|--------------------------------------------------------|
+| browser                  | [firefox](https://www.mozilla.org/en-US/firefox/)      |
+| configuration            | [ansible](https://github.com/ansible/ansible)          |
+| editor-gui               | [vscode](https://code.visualstudio.com/)               |
+| editor-tui               | [helix](https://github.com/helix-editor/helix)         |
+| music-gui                | [spotify](https://www.spotify.com)                     |
+| music-tui                | [cmus](https://github.com/cmus/cmus)                   |
+| feed reader              | [newsboat](https://github.com/newsboat/newsboat)       |
+| shell                    | [fish](https://github.com/fish-shell/fish-shell)       |
+| terminal                 | [alacritty](https://github.com/alacritty/alacritty)    |
+| terminal multiplexer     | [tmux](https://github.com/tmux/tmux)                   |
+| font                     | [fira code](https://github.com/tonsky/FiraCode)        |
+| password manager         | [bitwarden](https://github.com/bitwarden)              |
+| fun typing speed test    | [thokr](https://github.com/jrnxf/thokr)                |
+| cat                      | [bat](https://github.com/sharkdp/bat)                  |
+| grep                     | [ripgrep](https://github.com/BurntSushi/ripgrep)       |
+| ls                       | [eza](https://github.com/eza-community/eza)            |
+| tldr                     | [tealdeer](https://github.com/dbrgn/tealdeer)          |
+| top                      | [htop](https://github.com/hishamhm/htop)               |
 
 
 

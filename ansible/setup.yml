@@ -31,5 +31,5 @@
       ansible.builtin.include_tasks: tasks/install_vscode_extensions.yml
     - name: Run system maintenance after doing changes
       ansible.builtin.include_tasks: tasks/maintenance_after.yml
-    - name: Set ZSH as default SHELL
+    - name: Set default shell
       ansible.builtin.include_tasks: tasks/set_shell.yml

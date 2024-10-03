@@ -4,6 +4,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.sideBar.location": "right",
     "editor.fontFamily": "'FiraCode Nerd Font', Menlo, 'Courier New', monospace",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -19,17 +20,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.profiles.linux": {
-        "zsh": {
-            "path": "zsh",
-            "args": [
-                "-l"
-            ]
-        },
-    },
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.sideBar.location": "right",
     "[ansible]": {
         "editor.detectIndentation": true,
         "editor.insertSpaces": true,

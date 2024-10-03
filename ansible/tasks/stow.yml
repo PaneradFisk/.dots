@@ -8,6 +8,6 @@
 - name: Stow dotfiles
   when: stow_exists is succeeded
   ansible.builtin.command:
-    cmd: stow --restow --dir=/home/andreb/.dotfiles/ --target=/home/andreb/ "{{ apps_stow }}"
+    cmd: stow --restow --dir=/home/andreb/.dots/ --target=/home/andreb/ "{{ apps_stow }}"
   register: stow_output
   changed_when: stow_output.rc != 0

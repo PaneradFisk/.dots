@@ -1,0 +1,26 @@
+# check status
+# hx --health languages
+
+[[language]]
+name = "markdown"
+formatter = { command = "markdown-oxide", args = ["--stdin"] }
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["--stdin"] }
+
+[[language]]
+name = "yaml"
+# formatter = { command = "", args = ["--stdin"] }
+indent = { tab-width = 2, unit = " " }
+
+
+[[language]]
+name = "rust"
+formatter = { command = "rustfmt", args = ["--stdin"] }
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+formatter = { command = "black", args = ["--stdin"] }

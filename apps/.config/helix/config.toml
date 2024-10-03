@@ -35,7 +35,9 @@ right = [
 ]
 
 [keys.normal]
-"ret" = ["open_below", "normal_mode"] # maps RETURN to "create new line"
+"ret" = ["open_below", "normal_mode"]  # maps RETURN to "create new line"
+y = "yank_main_selection_to_clipboard"
+p = "paste_clipboard_before"
 
 [keys.insert]
 "C-c" = "normal_mode"

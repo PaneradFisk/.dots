@@ -1,6 +1,15 @@
 ---
-- name: Ensure ZSH is set as shell for andreb
+# - name: DEBUG - SHELL
+#   ansible.builtin.debug:
+#     msg: "configure shell in set_shell.yml if you want it"
+# - name: Ensure ZSH is set as shell for andreb
+#   ansible.builtin.user:
+#     name: "andreb"
+#     shell: "/usr/bin/zsh"
+#   become: true
+
+- name: Ensure shell for andreb is FISH
   ansible.builtin.user:
     name: "andreb"
-    shell: "/usr/bin/zsh"
+    shell: "/usr/bin/fish"
   become: true

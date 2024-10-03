@@ -14,7 +14,7 @@ alias nvim="$EDITOR"
 ### quality of life ###
 #### abbreviations
 abbr --add dev "cd ~/Documents/development"
-abbr --add dot "cd ~/.dotfiles"
+abbr --add dot "cd ~/.dots"
 abbr --add down "cd ~/Downloads"
 abbr --add note "cd ~/the_journey/"
 abbr --add speed thokr # typing speedtest
@@ -46,7 +46,7 @@ alias ......="cd ../../../../.."
 alias ll="eza --group-directories-first --icons -l" # list ONLY NON-HIDDEN files, with DIRs first and icons
 alias lal="eza --group-directories-first --icons -a -l" # list ALL files, with DIRs first and icons
 alias tt="eza --group-directories-first --icons -T " # prints file-structure - hidden files
-alias tta="eza --group-directories-first --icons -T -a --ignore-glob='.git|debug'"   # prints file-tree + hidden files (exclude .git)
+alias tta="eza --group-directories-first --icons -T -a --ignore-glob='.git|debug'" # prints file-tree + hidden files (exclude .git)
 
 ### rust
 abbr --add cr "cargo run"
@@ -58,6 +58,8 @@ abbr --add ci "cargo install"
 
 # PATHs
 fish_add_path $HOME/.cargo/bin
+
+
 
 ## Make GPG work (don't ask)
 #set GPG_TTY $(tty)

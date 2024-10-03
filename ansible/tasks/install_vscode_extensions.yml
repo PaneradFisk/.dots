@@ -1,5 +1,9 @@
 ---
 - name: Install VSCode extensions via CLI
+  become: true
+  become_user: andreb
   ansible.builtin.command:
     cmd: code --install-extension "{{ item }}"
   with_items: "{{ vscode_extensions }}"
+  register: extension_result
+  changed_when: "'already installed' not in extension_result.stdout"

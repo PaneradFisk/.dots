@@ -1,7 +1,7 @@
 ---
 local_path_dirs:
-  - ~/Documents/development
-  - ~/.installers
+  - /home/andreb/Documents/development
+  - /home/andreb/.installers
 
 local_path_proton_vpn: /home/andreb/.installers/proton_vpn.rpm
 local_path_proton_pass: /home/andreb/.installers/proton_pass.rpm
@@ -39,9 +39,9 @@ apps_dnf:
   - fzf # https://github.com/junegunn/fzf
   - htop # https://github.com/htop-dev/htop
   - akmod-nvidia # nvidia graphics drivers, requires rpmfusion non-free
-  - zsh # https://github.com/zsh-users/zsh
-  - zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
-  - zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
+  # - zsh # https://github.com/zsh-users/zsh
+  # - zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
+  # - zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
 
 apps_flatpak:
   - com.bitwarden.desktop
@@ -53,6 +53,8 @@ apps_flatpak:
 
 apps_cargo:
   - thokr # https://github.com/jrnxf/thokr
+  - taplo-cli # https://github.com/tamasfe/taplo
+  - markdown-oxide # https://github.com/Feel-ix-343/markdown-oxide
 
 dnf_bloatware:
   - akregator
