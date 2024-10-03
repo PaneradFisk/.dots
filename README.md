@@ -6,8 +6,8 @@
 (they are 100% made for myself and nobody else, use at your own risk)
 1. sudo dnf install ansible git
 2. cd ~
-3. git clone https://github.com/PaneradFisk/.dotfiles.git
-5. sudo ansible-playbook ~/.dotfiles/ansible/setup.yml
+3. git clone https://github.com/PaneradFisk/.dots.git
+5. sudo ansible-playbook ~/.dots/ansible/setup.yml
 ***
 
 
