@@ -55,6 +55,7 @@ apps_cargo:
   - thokr # https://github.com/jrnxf/thokr
   - taplo-cli # https://github.com/tamasfe/taplo
   - markdown-oxide # https://github.com/Feel-ix-343/markdown-oxide
+  - slint-lsp # https://github.com/slint-ui/slint/tree/HEAD/tools/lsp
 
 dnf_bloatware:
   - akregator

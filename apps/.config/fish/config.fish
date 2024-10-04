@@ -57,10 +57,14 @@ abbr --add ci "cargo install"
 
 ### git
 abbr --add gs "git status"
+abbr --add gp "git push"
+abbr --add gc "git commit -m"
+abbr --add gb "git checkout"
+
 
 # PATHs
 fish_add_path $HOME/.cargo/bin
-
+fish_add_path $HOME/.local/bin
 
 
 ## Make GPG work (don't ask)

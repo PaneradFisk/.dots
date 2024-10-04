@@ -1,6 +1,7 @@
 theme = "catppuccin_frappe"
 
 [editor]
+bufferline = "multiple"
 scrolloff = 8
 scroll-lines = 1
 line-number = "relative"
@@ -16,6 +17,12 @@ lsp.display-inlay-hints = true
 cursor-shape.insert = "bar"
 cursor-shape.select = "underline"
 
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'`' = '`'
+'<' = '>'
 
 [editor.statusline]
 mode.normal = "NORMAL"
@@ -39,7 +46,6 @@ right = [
 [keys.normal]
 "ret" = ["open_below", "normal_mode"]  # maps RETURN to "create new line"
 y = "yank_main_selection_to_clipboard"
-p = "paste_clipboard_before"
 
 [keys.insert]
 "C-c" = "normal_mode"
