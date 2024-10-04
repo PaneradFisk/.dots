@@ -55,6 +55,8 @@ abbr --add ct "cargo test"
 abbr --add ca "cargo add"
 abbr --add ci "cargo install"
 
+### git
+abbr --add gs "git status"
 
 # PATHs
 fish_add_path $HOME/.cargo/bin

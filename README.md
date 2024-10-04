@@ -60,7 +60,7 @@
 ***
 # shit to take care of
 ## firefox:
-#### extensions:
+### extensions:
 - [unhook](https://unhook.app/)
 - [adguard](https://adguard.com/en/welcome.html)
 - [ublock origin](https://github.com/gorhill/uBlock#ublock-origin)
@@ -69,7 +69,7 @@
 - [bitwarden](https://bitwarden.com/)
 - [simpleLogin](https://simplelogin.io/)
 - [proton pass](https://proton.me/pass) (replaces bitwarden and simplelogin)
-#### theme:
+### theme:
 - [gruvbox dark](https://codeberg.org/calvinchd/GruvboxDarkFirefoxTheme)
 
     

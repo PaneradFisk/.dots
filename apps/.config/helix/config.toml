@@ -7,12 +7,14 @@ line-number = "relative"
 cursorline = true
 mouse = false
 default-line-ending = "lf"
+file-picker.hidden = false
 gutters.layout = ["diff", "line-numbers", "spacer"]
 indent-guides.render = true
 indent-guides.character = "┆"
 indent-guides.skip-levels = 1
 lsp.display-inlay-hints = true
 cursor-shape.insert = "bar"
+cursor-shape.select = "underline"
 
 
 [editor.statusline]
