@@ -1,7 +1,3 @@
-# these files are probably currently broken
-***
-
-
 ## step-by-step to use these files.
 (they are 100% made for myself and nobody else, use at your own risk)
 1. sudo dnf install ansible git
