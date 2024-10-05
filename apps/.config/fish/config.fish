@@ -2,6 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# make valid commands green instead of blue(?)
+set -gx fish_color_command green
+
 # No greeting
 set fish_greeting
 
