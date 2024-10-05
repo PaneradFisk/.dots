@@ -10,6 +10,20 @@ set EDITOR hx
 alias vim="$EDITOR"
 alias nvim="$EDITOR"
 
+# fzf
+fzf --fish | source
+function fzf_ctrl_t
+    set selected_path (fzf --preview 'tree -C {} | head -200' --height 40% --border --bind 'ctrl-t:accept')
+
+    if test -n "$selected_path"
+        set dir_path (dirname "$selected_path")
+        tmux new-window "cd '$dir_path'; exec $SHELL"
+    end
+end
+
+bind \ct fzf_ctrl_t
+
+
 
 ### quality of life ###
 #### abbreviations
@@ -28,7 +42,7 @@ abbr --add show "lal | rg"
 #### aliases
 alias shrug="echo '¯\\_(ツ)_/¯'"
 alias flip="echo '(╯°□°)╯︵ ┻━┻'"
-alias coco="cp -f ~/.config/cmus/autosave ~/.dotfiles/apps/.config/cmus/"
+alias coco="cp -f ~/.config/cmus/autosave ~/.dots/apps/.config/cmus/"
 alias soso="source ~/.config/fish/config.fish; coco; echo 'cmus saved and zsh sourced!'"
 alias week="date +%V"
 alias srv="ssh berdna@192.168.1.43"

@@ -1,12 +1,13 @@
 ---
+home: "/home/andreb"
 local_path_dirs:
-  - /home/andreb/Documents/development
-  - /home/andreb/.installers
+  - "{{ home }}/Documents/development"
+  - "{{ home }}/.installers"
 
-local_path_proton_vpn: /home/andreb/.installers/proton_vpn.rpm
-local_path_proton_pass: /home/andreb/.installers/proton_pass.rpm
-local_path_rust_installer: /home/andreb/.installers/sh.rustup.rs
-local_path_cargo: /home/andreb/.cargo/bin/rustup
+local_path_proton_vpn: "{{ home }}/.installers/proton_vpn.rpm"
+local_path_proton_pass: "{{ home }}/.installers/proton_pass.rpm"
+local_path_rust_installer: "{{ home }}/.installers/sh.rustup.rs"
+local_path_cargo: "{{ home }}/.cargo/bin/rustup"
 
 url_repo_rpm_fusion_free: "http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_major_version }}.noarch.rpm"
 url_repo_rpm_fusion_non_free: "http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_major_version }}.noarch.rpm"
