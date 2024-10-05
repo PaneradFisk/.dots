@@ -32,5 +32,6 @@
             "strings": true
         },
         "editor.autoIndent": "advanced"
-    }
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false
 }
