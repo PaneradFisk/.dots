@@ -15,16 +15,18 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCfX-h6DUKJOuc4ogXPM7vjA you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsm-uFE1pEJnmySSCRTStaA youtube "~Thoughtworthy Co" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA youtube "~No Boilerplate" !
 
-https://api.mangaupdates.com/v1/series/55099564912/rss manga "~One Piece" !
-https://api.mangaupdates.com/v1/series/67814124606/rss manga "~Spy x Family" !
-https://api.mangaupdates.com/v1/series/49838489832/rss manga "~The Reaper" !
-https://api.mangaupdates.com/v1/series/63947218958/rss manga "~The Second Life is a Healing Life?" !
-https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest Senior Disciple" !
-https://api.mangaupdates.com/v1/series/30535847369/rss manga "~One-Punch Man" !
+
+https://api.mangaupdates.com/v1/series/28672174717/rss manga "~Hunter Academy's Strongest Battle God" !
 https://api.mangaupdates.com/v1/series/49449837876/rss manga "~Hunter x Hunter" !
-https://api.mangaupdates.com/v1/series/27728982867/rss manga "~Vinland Saga" !
-https://api.mangaupdates.com/v1/series/28672174717/rss manga "~Hunter Academy's Invincible Martial God" !
 https://api.mangaupdates.com/v1/series/16236150072/rss manga "~Infinite Leveling: Murim" !
+https://api.mangaupdates.com/v1/series/55099564912/rss manga "~One Piece" !
+https://api.mangaupdates.com/v1/series/30535847369/rss manga "~One-Punch Man" !
+https://api.mangaupdates.com/v1/series/69992665838/rss manga "~Lord of Destiny Wheel" !
+https://api.mangaupdates.com/v1/series/49838489832/rss manga "~Reaper of the Drifting Moon" !
+https://api.mangaupdates.com/v1/series/67814124606/rss manga "~Spy x Family" !
+https://api.mangaupdates.com/v1/series/63947218958/rss manga "~The Second Life is a Healing Life?" !
+https://api.mangaupdates.com/v1/series/27728982867/rss manga "~Vinland Saga" !
+https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest Senior Disciple" !
 
 https://blog.rust-lang.org/feed.xml orgs "~Rust Language" !
 https://opentofu.org/blog/rss.xml orgs "~Blog Open Tofu" !

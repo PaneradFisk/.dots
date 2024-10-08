@@ -55,6 +55,15 @@
 
 ***
 # shit to take care of
+## hx:
+### add lsp etc 
+- yaml
+- csv
+- sql
+- html
+- css
+- fish
+
 ## firefox:
 ### extensions:
 - [unhook](https://unhook.app/)

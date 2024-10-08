@@ -42,7 +42,6 @@ apps_dnf:
   - akmod-nvidia # nvidia graphics drivers, requires rpmfusion non-free
 
 apps_flatpak:
-  - com.bitwarden.desktop
   - com.spotify.Client
   - com.valvesoftware.Steam
   - org.qbittorrent.qBittorrent
