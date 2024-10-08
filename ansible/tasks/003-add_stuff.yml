@@ -1,0 +1,39 @@
+---
+- name: Create directories
+  with_items: "{{ local_path_dirs }}"
+  ansible.builtin.file:
+    mode: "0777"
+    owner: andreb
+    path: "{{ item }}"
+    recurse: true
+    state: directory
+
+- name: Check if font FiraCode exists
+  ansible.builtin.stat:
+    path: /usr/local/share/fonts/FiraCodeNerdFont/FiraCodeNerdFontMono-Regular.ttf
+  register: font_firacode
+
+- name: Copy files from dotfiles to font directory
+  when: not font_firacode.stat.exists
+  ansible.builtin.copy:
+    mode: "777"
+    dest: /usr/local/share/fonts/FiraCodeNerdFont
+    src: /home/andreb/.dotfiles/.misc/fonts/firacodenerdfont/
+
+- name: Add repo RPM Fusion free
+  ansible.builtin.dnf:
+    state: present
+    disable_gpg_check: true
+    name: "{{ url_repo_rpm_fusion_free }}"
+
+- name: Add repo RPM Fusion nonfree
+  ansible.builtin.dnf:
+    state: present
+    disable_gpg_check: true
+    name: "{{ url_repo_rpm_fusion_non_free }}"
+
+- name: Add repo Flathub
+  community.general.flatpak_remote:
+    state: present
+    name: flathub
+    flatpakrepo_url: "{{ url_repo_flathub }}"

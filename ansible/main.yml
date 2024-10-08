@@ -1,0 +1,30 @@
+---
+- name: Setup Fedora KDE Plasma
+  hosts: localhost
+  gather_facts: true
+  vars_files:
+    - variables.yml
+  tasks:
+    - name: Set stuff
+      ansible.builtin.include_tasks: tasks/001-set_stuff.yml
+
+    - name: Install stow and fish
+      ansible.builtin.include_tasks: tasks/002-stow_and_fish.yml
+
+    - name: Add stuff
+      ansible.builtin.include_tasks: tasks/003-add_stuff.yml
+
+    - name: Update/Update dnf and flatpak
+      ansible.builtin.include_tasks: tasks/004-update_stuff.yml
+
+    - name: Install Cargo and Rust
+      ansible.builtin.include_tasks: tasks/005-install_cargo.yml
+
+    - name: Remove Fedora Bloatware
+      ansible.builtin.include_tasks: tasks/006-remove_bloatware.yml
+
+    - name: Install Applications
+      ansible.builtin.include_tasks: tasks/007-install_applications.yml
+
+    - name: Run system maintenance after doing changes
+      ansible.builtin.include_tasks: tasks/008-maintenance_after.yml

@@ -1,0 +1,28 @@
+---
+# https://www.gnu.org/software/stow/
+- name: DNF - INSTALL - stow
+  ansible.builtin.dnf:
+    state: present
+    name: stow
+  register: stow_exists
+
+- name: Stow dotfiles
+  when: stow_exists is succeeded
+  ansible.builtin.command:
+    cmd: stow --restow --dir=/home/andreb/.dots/ --target=/home/andreb/ "{{ apps_stow }}"
+  register: stow_output
+  changed_when: stow_output.rc != 0
+
+# https://github.com/fish-shell/fish-shell
+- name: DNF - INSTALL - fish
+  ansible.builtin.dnf:
+    state: present
+    name: fish
+  register: fish_exists
+
+- name: Ensure shell for andreb is FISH
+  when: fish_exists
+  become: true
+  ansible.builtin.user:
+    name: "andreb"
+    shell: "/usr/bin/fish"

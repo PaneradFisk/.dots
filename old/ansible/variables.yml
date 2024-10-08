@@ -3,15 +3,20 @@ home: "/home/andreb"
 local_path_dirs:
   - "{{ home }}/Documents/development"
   - "{{ home }}/.installers"
-  - "/usr/local/share/fonts/FiraCodeNerdFont"
 
+local_path_proton_vpn: "{{ home }}/.installers/proton_vpn.rpm"
+local_path_proton_pass: "{{ home }}/.installers/proton_pass.rpm"
 local_path_rust_installer: "{{ home }}/.installers/sh.rustup.rs"
 local_path_cargo: "{{ home }}/.cargo/bin/rustup"
 
 url_repo_rpm_fusion_free: "http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_major_version }}.noarch.rpm"
 url_repo_rpm_fusion_non_free: "http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_major_version }}.noarch.rpm"
 url_repo_flathub: "https://flathub.org/repo/flathub.flatpakrepo"
+url_proton_vpn: "https://repo.protonvpn.com/fedora-{{ ansible_distribution_major_version }}-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm"
+url_proton_pass: "https://proton.me/download/PassDesktop/linux/x64/ProtonPass.rpm"
 url_rust_installer: "https://sh.rustup.rs"
+
+checksum_proton_pass_v1223: sha512:e8d2aaf9c215e0db52432117a123ef48c6f659c78ae06545b5d331fb55de243718b1a334e39cd2dadc7de5864421ed519c5d042529a9386098704b693aa0f540
 
 apps_stow: "apps"
 
@@ -45,8 +50,9 @@ apps_flatpak:
 
 apps_cargo:
   - thokr # https://github.com/jrnxf/thokr
-  - taplo-cli # LSP-toml https://github.com/tamasfe/taplo
-  - markdown-oxide # LSP-markdown https://github.com/Feel-ix-343/markdown-oxide
+  - taplo-cli # https://github.com/tamasfe/taplo
+  - markdown-oxide # https://github.com/Feel-ix-343/markdown-oxide
+  - slint-lsp # https://github.com/slint-ui/slint/tree/HEAD/tools/lsp
 
 dnf_bloatware:
   - akregator
@@ -77,3 +83,15 @@ dnf_bloatware:
   - neochat
   - okular
   - skanpage
+
+vscode_extensions:
+  - catppuccin.catppuccin-vsc
+  - gruntfuggly.todo-tree
+  - mechatroner.rainbow-csv
+  - mohsen1.prettify-json
+  - ms-python.python
+  - pkief.material-icon-theme
+  - redhat.ansible
+  - redhat.vscode-yaml
+  - rust-lang.rust-analyzer
+  - tamasfe.even-better-toml

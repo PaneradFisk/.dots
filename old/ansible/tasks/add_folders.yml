@@ -1,0 +1,9 @@
+---
+- name: Create directories
+  with_items: "{{ local_path_dirs }}"
+  ansible.builtin.file:
+    mode: "0777"
+    owner: andreb
+    path: "{{ item }}"
+    recurse: true
+    state: directory
