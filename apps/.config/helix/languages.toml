@@ -4,7 +4,7 @@
 [[language]]
 name = "markdown"
 formatter = { command = "markdown-oxide", args = ["--stdin"] }
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "toml"
@@ -13,19 +13,19 @@ formatter = { command = "taplo", args = ["--stdin"] }
 [[language]]
 name = "yaml"
 # formatter = { command = "", args = ["--stdin"] }
-indent = { tab-width = 2, unit = " " }
+indent = { tab-width = 2, unit = "  " }
 
 
 [[language]]
 name = "rust"
 formatter = { command = "rustfmt", args = ["--stdin"] }
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "python"
 language-servers = ["pyright"]
 formatter = { command = "black", args = ["--stdin"] }
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "slint"
