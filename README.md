@@ -28,7 +28,7 @@
 | ls                       | [eza](https://github.com/eza-community/eza)            |
 | tldr                     | [tealdeer](https://github.com/dbrgn/tealdeer)          |
 | top                      | [htop](https://github.com/hishamhm/htop)               |
-
+| fzf                      | [fzf](https://github.com/junegunn/fzf)
 
 
 ## replace me
@@ -41,17 +41,12 @@
 - plasma panelsw -> [waybar](https://github.com/Alexays/Waybar)
 - krunner-> [rofi-wayland](https://github.com/lbonn/rofi)
 - dolphin -> [joshuto](https://github.com/kamiyaa/joshuto)
-- bitwarden -> [proton pass](https://proton.me/pass)
-- gmail/outlook/icloud -> [proton mail](https://proton.me/mail)
-- gdrive/onedrive/icloud/dropbox -> [proton drive](https://proton.me/drive)
 - find -> [fd](https://github.com/sharkdp/fd)
-- find -> [fzf](https://github.com/junegunn/fzf)
 - cd -> [zoxide](https://github.com/ajeetdsouza/zoxide)
 - ps -> [procs](https://github.com/dalance/procs)
 - sed -> [sd](https://github.com/chmln/sd)
 
 
-- vpn -> [proton vpn](https://protonvpn.com/)
 
 ***
 # shit to take care of
@@ -72,8 +67,6 @@
 - [ghostery](https://www.ghostery.com/)
 - [privacy badger](https://privacybadger.org/)
 - [bitwarden](https://bitwarden.com/)
-- [simpleLogin](https://simplelogin.io/)
-- [proton pass](https://proton.me/pass) (replaces bitwarden and simplelogin)
 ### theme:
 - [gruvbox dark](https://codeberg.org/calvinchd/GruvboxDarkFirefoxTheme)
 
