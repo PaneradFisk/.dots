@@ -29,9 +29,7 @@ https://api.mangaupdates.com/v1/series/27728982867/rss manga "~Vinland Saga" !
 https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest Senior Disciple" !
 
 https://blog.rust-lang.org/feed.xml orgs "~Rust Language" !
-https://opentofu.org/blog/rss.xml orgs "~Blog Open Tofu" !
 https://blog.mozilla.org/en/feed/ orgs "~Blog Mozilla" !
-https://proton.me/blog/feed orgs "~Blog Proton" !
 
 https://www.redhat.com/en/rss/blog/channel/red-hat-ansible-automation tech "~RedHat Ansible Automation" !
 https://feed.infoq.com/Infrastructure/ tech "~InfoQ Infrastructure" !
