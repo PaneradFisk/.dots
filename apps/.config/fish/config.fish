@@ -38,6 +38,7 @@ abbr --add speed thokr # typing speedtest
 abbr --add rss newsboat # feed reader
 abbr --add c clear
 abbr --add e exit
+abbr --add d dict
 abbr --add grep rg
 abbr --add show "lal | rg"
 
@@ -49,7 +50,7 @@ alias coco="cp -f ~/.config/cmus/autosave ~/.dots/apps/.config/cmus/"
 alias soso="source ~/.config/fish/config.fish; coco; echo 'cmus saved and zsh sourced!'"
 alias week="date +%V"
 alias srv="ssh berdna@192.168.1.43"
-
+alias hfish="hx ~/.dots/apps/.config/fish/config.fish"
 alias nn='cd ~/the_journey/notes && cp ~/the_journey/templates/template_journey.md "$(date +"%Y-%m-%d_%H%M").md" && $EDITOR "$(date +"%Y-%m-%d_%H%M").md"'
 
 

@@ -28,16 +28,22 @@ https://api.mangaupdates.com/v1/series/63947218958/rss manga "~The Second Life i
 https://api.mangaupdates.com/v1/series/27728982867/rss manga "~Vinland Saga" !
 https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest Senior Disciple" !
 
-https://blog.rust-lang.org/feed.xml orgs "~Rust Language" !
-https://blog.mozilla.org/en/feed/ orgs "~Blog Mozilla" !
+
+https://blog.rust-lang.org/feed.xml orgs "~Rust" !
+https://blog.mozilla.org/en/feed/ orgs "~Mozilla" !
+https://bitwarden.com/blog/ orgs "~Bitwarden" !
+https://helix-editor.com/news/ orgs "~Helix" !
+
 
 https://www.redhat.com/en/rss/blog/channel/red-hat-ansible-automation tech "~RedHat Ansible Automation" !
 https://feed.infoq.com/Infrastructure/ tech "~InfoQ Infrastructure" !
 https://feed.infoq.com/Automation/ tech "~InfoQ Automation" !
 
+
 https://lobste.rs/t/rust.rss rust "~rust| lobste.rs" !
 https://feed.infoq.com/Rust/ rust "~rust| infoq.com" !
 https://dev.to/feed/tag/rust rust "~rust| dev.to" !
+
 
 https://fabiensanglard.net/rss.xml misc !
 
