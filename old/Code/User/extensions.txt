@@ -1,0 +1,10 @@
+redhat.ansible
+catppuccin.catppuccin-vsc
+tamasfe.even-better-toml
+pkief.material-icon-theme
+mohsen1.prettify-json
+ms-python.python
+mechatroner.rainbow-csv
+rust-lang.rust-analyzer
+gruntfuggly.todo-tree
+redhat.vscode-yaml
