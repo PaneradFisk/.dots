@@ -1,6 +1,6 @@
 "query:---Youtube---:tags # \"youtube\""
 "query:---Manga---:tags # \"manga\""
-
+"query:---Software I use---:tags # \"use\""
 "query:---Organizations---:tags # \"orgs\""
 "query:---Tech---:tags # \"tech\""
 "query:---Rust---:tags # \"rust\""
@@ -14,7 +14,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCJ24N4O0bP7LGLBDvye7oCA you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfX-h6DUKJOuc4ogXPM7vjA youtube "~Bonus D'Avella" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsm-uFE1pEJnmySSCRTStaA youtube "~Thoughtworthy Co" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA youtube "~No Boilerplate" !
-
+https://www.youtube.com/feeds/videos.xml?channel_id=UCAL3JXZSzSm8AlZyD3nQdBA youtube "~Primitive Technology" !
 
 https://api.mangaupdates.com/v1/series/28672174717/rss manga "~Hunter Academy's Strongest Battle God" !
 https://api.mangaupdates.com/v1/series/49449837876/rss manga "~Hunter x Hunter" !
@@ -27,23 +27,21 @@ https://api.mangaupdates.com/v1/series/67814124606/rss manga "~Spy x Family" !
 https://api.mangaupdates.com/v1/series/63947218958/rss manga "~The Second Life is a Healing Life?" !
 https://api.mangaupdates.com/v1/series/27728982867/rss manga "~Vinland Saga" !
 https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest Senior Disciple" !
+https://api.mangaupdates.com/v1/series/58524655910/rss manga "~Talen-Swallowing Magician" !
 
-
-https://blog.rust-lang.org/feed.xml orgs "~Rust" !
-https://blog.mozilla.org/en/feed/ orgs "~Mozilla" !
-https://bitwarden.com/blog/ orgs "~Bitwarden" !
-https://helix-editor.com/news/ orgs "~Helix" !
-
+https://blog.mozilla.org/en/feed/ use "~Mozilla" !
+https://bitwarden.com/blog/ use "~Bitwarden" !
+https://helix-editor.com/news/ use "~Helix" !
+https://www.ansible.com/blog/# use "~Ansible" !
 
 https://www.redhat.com/en/rss/blog/channel/red-hat-ansible-automation tech "~RedHat Ansible Automation" !
 https://feed.infoq.com/Infrastructure/ tech "~InfoQ Infrastructure" !
 https://feed.infoq.com/Automation/ tech "~InfoQ Automation" !
-
+https://blog.rust-lang.org/feed.xml tech "~Rust" !
 
 https://lobste.rs/t/rust.rss rust "~rust| lobste.rs" !
 https://feed.infoq.com/Rust/ rust "~rust| infoq.com" !
 https://dev.to/feed/tag/rust rust "~rust| dev.to" !
-
 
 https://fabiensanglard.net/rss.xml misc !
 

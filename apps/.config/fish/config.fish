@@ -26,14 +26,18 @@ end
 
 bind \ct fzf_ctrl_t
 
-
+### variables
+set path_journey ~/Documents/the_journey
+set path_dev ~/Documents/development
+set path_film ~/Documents/film
 
 ### quality of life ###
 #### abbreviations
-abbr --add dev "cd ~/Documents/development"
+abbr --add dev "cd $path_dev"
+abbr --add film "cd $path_film"
+abbr --add note "cd $path_journey"
 abbr --add dot "cd ~/.dots"
 abbr --add down "cd ~/Downloads"
-abbr --add note "cd ~/the_journey/"
 abbr --add speed thokr # typing speedtest
 abbr --add rss newsboat # feed reader
 abbr --add c clear
@@ -51,7 +55,7 @@ alias soso="source ~/.config/fish/config.fish; coco; echo 'cmus saved and zsh so
 alias week="date +%V"
 alias srv="ssh berdna@192.168.1.43"
 alias hfish="hx ~/.dots/apps/.config/fish/config.fish"
-alias nn='cd ~/the_journey/notes && cp ~/the_journey/templates/template_journey.md "$(date +"%Y-%m-%d_%H%M").md" && $EDITOR "$(date +"%Y-%m-%d_%H%M").md"'
+# alias nn='cd $path_journey/notes && cp ~/the_journey/templates/template_journey.md "$(date +"%Y-%m-%d_%H%M").md" && $EDITOR "$(date +"%Y-%m-%d_%H%M").md"'
 
 
 ### moving around
