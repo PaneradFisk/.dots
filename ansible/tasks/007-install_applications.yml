@@ -1,7 +1,7 @@
 ---
 - name: Install DNF applications
   with_items: "{{ apps_dnf }}"
-  ansible.builtin.dnf:
+  ansible.builtin.dnf5:
     state: present
     name: "{{ item }}"
 
@@ -17,3 +17,14 @@
     name: "{{ item }}"
   environment:
     PATH: "/home/andreb/.cargo/bin:{{ ansible_env.PATH }}"
+
+- name: Install LSP Markdown-oxide
+  community.general.cargo:
+    state: present
+    locked: true
+    name: markdown-oxide
+    path: https://github.com/Feel-ix-343/markdown-oxide.git
+  environment:
+    PATH: "/home/andreb/.cargo/bin:{{ ansible_env.PATH }}"
+  ignore_errors: true
+

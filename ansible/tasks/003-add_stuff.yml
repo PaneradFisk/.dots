@@ -18,16 +18,16 @@
   ansible.builtin.copy:
     mode: "777"
     dest: /usr/local/share/fonts/FiraCodeNerdFont
-    src: /home/andreb/.dotfiles/.misc/fonts/firacodenerdfont/
+    src: /home/andreb/.dots/fonts/firacodenerdfont/
 
 - name: Add repo RPM Fusion free
-  ansible.builtin.dnf:
+  ansible.builtin.dnf5:
     state: present
     disable_gpg_check: true
     name: "{{ url_repo_rpm_fusion_free }}"
 
 - name: Add repo RPM Fusion nonfree
-  ansible.builtin.dnf:
+  ansible.builtin.dnf5:
     state: present
     disable_gpg_check: true
     name: "{{ url_repo_rpm_fusion_non_free }}"

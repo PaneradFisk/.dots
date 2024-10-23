@@ -1,12 +1,7 @@
 ---
 - name: Upgrade all packages DNF
-  ansible.builtin.dnf:
+  ansible.builtin.dnf5:
     name: "*"
     state: latest
     update_only: true
 
-- name: Upgrade all packages FLATPAK
-  with_items: "{{ apps_flatpak }}"
-  community.general.flatpak:
-    name: "{{ item }}"
-    state: latest

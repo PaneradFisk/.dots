@@ -1,7 +1,7 @@
 ---
 # https://www.gnu.org/software/stow/
 - name: DNF - INSTALL - stow
-  ansible.builtin.dnf:
+  ansible.builtin.dnf5:
     state: present
     name: stow
   register: stow_exists
@@ -15,7 +15,7 @@
 
 # https://github.com/fish-shell/fish-shell
 - name: DNF - INSTALL - fish
-  ansible.builtin.dnf:
+  ansible.builtin.dnf5:
     state: present
     name: fish
   register: fish_exists

@@ -18,7 +18,6 @@ apps_stow: "apps"
 apps_dnf:
   - alacritty # https://github.com/alacritty/alacritty
   - cmus # https://github.com/cmus/cmus
-  - code # https://github.com/microsoft/vscode
   - helix # https://github.com/helix-editor/helix
   - newsboat # https://github.com/newsboat/newsboat
   - solaar # logitech options replacement # https://github.com/pwr-Solaar/Solaar
@@ -46,7 +45,7 @@ apps_flatpak:
 apps_cargo:
   - thokr # https://github.com/jrnxf/thokr
   - taplo-cli # LSP-toml https://github.com/tamasfe/taplo
-  - markdown-oxide # LSP-markdown https://github.com/Feel-ix-343/markdown-oxide
+#  - markdown-oxide # LSP-markdown https://github.com/Feel-ix-343/markdown-oxide
 
 dnf_bloatware:
   - akregator
@@ -74,6 +73,7 @@ dnf_bloatware:
   - ktnef
   - kwrite
   - libreoffice-core
+  - mediawriter
   - neochat
   - okular
   - skanpage
