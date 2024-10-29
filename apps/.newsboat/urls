@@ -4,6 +4,7 @@
 "query:---Organizations---:tags # \"orgs\""
 "query:---Tech---:tags # \"tech\""
 "query:---Rust---:tags # \"rust\""
+"query:---Linux---:tags # \"linux\""
 "query:---Misc---:tags # \"misc\""
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcDovBodDVzAdgvk0s-WbdA youtube "~BitBrothers" !
@@ -18,16 +19,20 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCAL3JXZSzSm8AlZyD3nQdBA you
 
 https://api.mangaupdates.com/v1/series/28672174717/rss manga "~Hunter Academy's Strongest Battle God" !
 https://api.mangaupdates.com/v1/series/49449837876/rss manga "~Hunter x Hunter" !
+https://api.mangaupdates.com/v1/series/75155062029/rss manga "~I Rely on My Invincibility to Deal Tons of Damage Passively!" !
 https://api.mangaupdates.com/v1/series/16236150072/rss manga "~Infinite Leveling: Murim" !
 https://api.mangaupdates.com/v1/series/55099564912/rss manga "~One Piece" !
 https://api.mangaupdates.com/v1/series/30535847369/rss manga "~One-Punch Man" !
 https://api.mangaupdates.com/v1/series/69992665838/rss manga "~Lord of Destiny Wheel" !
 https://api.mangaupdates.com/v1/series/49838489832/rss manga "~Reaper of the Drifting Moon" !
+https://api.mangaupdates.com/v1/series/12770925855/rss manga "~Revenge of the Sword Clan's Hound" !
 https://api.mangaupdates.com/v1/series/67814124606/rss manga "~Spy x Family" !
+https://api.mangaupdates.com/v1/series/74095324437/rss manga "~Swordmaster's Youngest Son" !
+https://api.mangaupdates.com/v1/series/58524655910/rss manga "~Talent-Swallowing Magician" !
 https://api.mangaupdates.com/v1/series/63947218958/rss manga "~The Second Life is a Healing Life?" !
 https://api.mangaupdates.com/v1/series/27728982867/rss manga "~Vinland Saga" !
 https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest Senior Disciple" !
-https://api.mangaupdates.com/v1/series/58524655910/rss manga "~Talen-Swallowing Magician" !
+
 
 https://blog.mozilla.org/en/feed/ use "~Mozilla" !
 https://bitwarden.com/blog/ use "~Bitwarden" !
@@ -42,6 +47,15 @@ https://blog.rust-lang.org/feed.xml tech "~Rust" !
 https://lobste.rs/t/rust.rss rust "~rust| lobste.rs" !
 https://feed.infoq.com/Rust/ rust "~rust| infoq.com" !
 https://dev.to/feed/tag/rust rust "~rust| dev.to" !
+
+https://www.omglinux.com/feed linux "~omglinux" !
+https://linuxiac.com/feed/ linux "~linuxiac" !
+https://www.ectnews.com/about/link-to-us/#rss linux "~linuxinsider" !
+https://lwn.net/ linux "~lwn" !
+https://lxer.com/module/newswire/headlines.rss linux "~lxer" !
+https://www.linuxtoday.com/feed linux "~linuxtoday" !
+https://www.phoronix.com/rss.php linux "~phoronix" !
+https://planet.kde.org/index.xml linux "~kde planet" !
 
 https://fabiensanglard.net/rss.xml misc !
 

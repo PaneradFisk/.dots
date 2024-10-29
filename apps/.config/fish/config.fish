@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 # make valid commands green instead of blue(?)
 set -gx fish_color_command green
 
@@ -10,8 +6,6 @@ set fish_greeting
 
 # set helix to be $EDITOR
 set EDITOR hx
-alias vim="$EDITOR"
-alias nvim="$EDITOR"
 
 # fzf
 fzf --fish | source
@@ -43,7 +37,6 @@ abbr --add rss newsboat # feed reader
 abbr --add c clear
 abbr --add e exit
 abbr --add d dict
-abbr --add grep rg
 abbr --add show "lal | rg"
 
 
@@ -55,7 +48,6 @@ alias soso="source ~/.config/fish/config.fish; coco; echo 'cmus saved and zsh so
 alias week="date +%V"
 alias srv="ssh berdna@192.168.1.43"
 alias hfish="hx ~/.dots/apps/.config/fish/config.fish"
-# alias nn='cd $path_journey/notes && cp ~/the_journey/templates/template_journey.md "$(date +"%Y-%m-%d_%H%M").md" && $EDITOR "$(date +"%Y-%m-%d_%H%M").md"'
 
 
 ### moving around
@@ -87,10 +79,3 @@ abbr --add gb "git checkout"
 # PATHs
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
-
-
-## Make GPG work (don't ask)
-#set GPG_TTY $(tty)
-
-# english
-export LANG="en_GB.UTF-8"
