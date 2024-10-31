@@ -54,7 +54,6 @@ dnf_bloatware:
   - dragon
   - elisa-player
   - filelight
-  - firefox
   - gwenview
   - ibus-typing-booster
   - kaddressbook
