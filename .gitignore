@@ -1,4 +1,11 @@
+### logs
 *.log
+
+# newsboat
+*.newsboat/cache.db
+*.newsboat/cache.db.lock
+*.newsboat/history.cmdline
+
+### bullshit
 .vscode
 .DS_Store
-*.newsboat/cache.db
