@@ -36,8 +36,10 @@ apps_dnf:
 
 apps_flatpak:
   - com.bitwarden.desktop
+  - com.notepadqq.Notepadqq
   - com.spotify.Client
   - com.valvesoftware.Steam
+  - org.kde.Krita
   - org.qbittorrent.qBittorrent
   - org.signal.Signal
   - org.videolan.VLC
@@ -52,6 +54,7 @@ dnf_bloatware:
   - dragon
   - elisa-player
   - filelight
+  - firefox
   - gwenview
   - ibus-typing-booster
   - kaddressbook
