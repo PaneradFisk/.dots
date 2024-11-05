@@ -46,7 +46,8 @@
 - ps -> [procs](https://github.com/dalance/procs)
 - sed -> [sd](https://github.com/chmln/sd)
 
-
+## nice to have
+- [beets](https://github.com/beetbox/beets)
 
 ***
 # shit to take care of
