@@ -6,14 +6,14 @@
 # program = "/usr/bin/fish"
 
 [general]
-live_config_reload = false
+live_config_reload = true
 
 [env]
 TERM = "xterm-256color"
 
 [window]
 decorations = "None"       # Full / None
-opacity = 0.80
+opacity = 0.8
 blur = true
 padding = { x = 3, y = 0 } # x=left+right | y=top+bottom
 dynamic_padding = true

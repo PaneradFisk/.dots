@@ -12,7 +12,7 @@ formatter = { command = "taplo", args = ["--stdin"] }
 
 [[language]]
 name = "yaml"
-# formatter = { command = "", args = ["--stdin"] }
+formatter = { command = "yq", args = ["eval", "-P", "-i"] }
 indent = { tab-width = 2, unit = "  " }
 
 
@@ -20,14 +20,11 @@ indent = { tab-width = 2, unit = "  " }
 name = "rust"
 formatter = { command = "rustfmt", args = ["--stdin"] }
 indent = { tab-width = 4, unit = "    " }
+language-servers = ["rust-analyzer"]
 
 [[language]]
 name = "python"
-language-servers = ["pyright"]
-formatter = { command = "black", args = ["--stdin"] }
+language-servers = ["pylsp"]
+formatter = { command = "sh", args = ["-c", "isort --stdout | autopep8 --stdin --stdout"] }
 indent = { tab-width = 4, unit = "    " }
 
-[[language]]
-name = "slint"
-language-servers = ["slint-lsp"]
-formatter = { command = "slint-lsp", args = ["format", "--stdin"] }
