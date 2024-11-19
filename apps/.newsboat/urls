@@ -1,10 +1,6 @@
 "query:---Youtube---:tags # \"youtube\""
 "query:---Manga---:tags # \"manga\""
 "query:---Software I use---:tags # \"use\""
-"query:---Organizations---:tags # \"orgs\""
-"query:---Tech---:tags # \"tech\""
-"query:---Rust---:tags # \"rust\""
-"query:---Linux---:tags # \"linux\""
 "query:---Misc---:tags # \"misc\""
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcDovBodDVzAdgvk0s-WbdA youtube "~BitBrothers" !
@@ -17,6 +13,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCsm-uFE1pEJnmySSCRTStaA you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA youtube "~No Boilerplate" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAL3JXZSzSm8AlZyD3nQdBA youtube "~Primitive Technology" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcGXEidw0qjNdq7Gii8gHgg youtube "~Project Kamp" !
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9zY_E8mcAo_Oq772LEZq8Q youtube "~The First Take" ! 
 
 https://api.mangaupdates.com/v1/series/33058312529/rss manga "~Healing Life Through Camping In Another World" !
 https://api.mangaupdates.com/v1/series/28672174717/rss manga "~Hunter Academy's Strongest Battle God" !
@@ -46,22 +43,6 @@ https://bitwarden.com/blog/ use "~Bitwarden" !
 https://helix-editor.com/news/ use "~Helix" !
 https://www.ansible.com/blog/# use "~Ansible" !
 
-https://www.redhat.com/en/rss/blog/channel/red-hat-ansible-automation tech "~RedHat Ansible Automation" !
-https://feed.infoq.com/Infrastructure/ tech "~InfoQ Infrastructure" !
-https://feed.infoq.com/Automation/ tech "~InfoQ Automation" !
-https://blog.rust-lang.org/feed.xml tech "~Rust" !
-
-https://lobste.rs/t/rust.rss rust "~rust| lobste.rs" !
-https://feed.infoq.com/Rust/ rust "~rust| infoq.com" !
-https://dev.to/feed/tag/rust rust "~rust| dev.to" !
-
-https://www.omglinux.com/feed linux "~omglinux" !
-https://linuxiac.com/feed/ linux "~linuxiac" !
-https://www.ectnews.com/about/link-to-us/#rss linux "~linuxinsider" !
-https://lwn.net/ linux "~lwn" !
-https://www.linuxtoday.com/feed linux "~linuxtoday" !
-https://www.phoronix.com/rss.php linux "~phoronix" !
-https://planet.kde.org/index.xml linux "~kde planet" !
 
 https://fabiensanglard.net/rss.xml misc !
 
