@@ -39,6 +39,8 @@ abbr --add e exit
 abbr --add d dict
 abbr --add show "lal | rg"
 abbr --add fp flatpak
+abbr --add cat bat
+abbr --add ccat cat
 
 #### aliases
 alias shrug="echo '¯\\_(ツ)_/¯'"

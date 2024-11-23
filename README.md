@@ -12,7 +12,6 @@
 |--------------------------|--------------------------------------------------------|
 | browser                  | [firefox](https://www.mozilla.org/en-US/firefox/)      |
 | configuration            | [ansible](https://github.com/ansible/ansible)          |
-| editor-gui               | [vscode](https://code.visualstudio.com/)               |
 | editor-tui               | [helix](https://github.com/helix-editor/helix)         |
 | music-gui                | [spotify](https://www.spotify.com)                     |
 | music-tui                | [cmus](https://github.com/cmus/cmus)                   |
@@ -22,18 +21,13 @@
 | terminal multiplexer     | [tmux](https://github.com/tmux/tmux)                   |
 | font                     | [fira code](https://github.com/tonsky/FiraCode)        |
 | password manager         | [bitwarden](https://github.com/bitwarden)              |
-| fun typing speed test    | [thokr](https://github.com/jrnxf/thokr)                |
 | cat                      | [bat](https://github.com/sharkdp/bat)                  |
 | grep                     | [ripgrep](https://github.com/BurntSushi/ripgrep)       |
 | ls                       | [eza](https://github.com/eza-community/eza)            |
 | tldr                     | [tealdeer](https://github.com/dbrgn/tealdeer)          |
-| top                      | [htop](https://github.com/hishamhm/htop)               |
-| fzf                      | [fzf](https://github.com/junegunn/fzf)
+| find                     | [fd](https://github.com/sharkdp/fd)                    |
+| fuzzy finder             | [fzf](https://github.com/junegunn/fzf)                 |
 
-
-## replace me
-- filezilla -> ???
-- qbittorrent -> ???
 
 
 ## potential replacements
@@ -41,7 +35,6 @@
 - plasma panelsw -> [waybar](https://github.com/Alexays/Waybar)
 - krunner-> [rofi-wayland](https://github.com/lbonn/rofi)
 - dolphin -> [joshuto](https://github.com/kamiyaa/joshuto)
-- find -> [fd](https://github.com/sharkdp/fd)
 - cd -> [zoxide](https://github.com/ajeetdsouza/zoxide)
 - ps -> [procs](https://github.com/dalance/procs)
 - sed -> [sd](https://github.com/chmln/sd)

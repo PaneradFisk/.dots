@@ -1,6 +1,0 @@
----
-- name: Ensure shell for andreb is FISH
-  ansible.builtin.user:
-    name: "andreb"
-    shell: "/usr/bin/fish"
-  become: true
