@@ -11,8 +11,8 @@
     state: directory
     mode: "0755"
   loop:
-    - "{{ rustup_home }}"
-    - "{{ cargo_home }}"
+    - "{{ rust_rustup_home }}"
+    - "{{ rust_cargo_home }}"
 
 
 - name: Download installer if not exists
@@ -34,5 +34,5 @@
     # cmd: "{{ local_path_rust_installer }} -y"
     # creates: "{{ local_path_cargo }}"
   environment:
-    CARGO_HOME: "{{ cargo_home }}"
-    RUSTUP_HOME: "{{ rustup_home }}"
+    CARGO_HOME: "{{ rust_cargo_home }}"
+    RUSTUP_HOME: "{{ rust_rustup_home }}"

@@ -20,6 +20,11 @@ end
 
 bind \ct fzf_ctrl_t
 
+## global vars
+set -gx CARGO_HOME /opt/rust/.cargo
+set -gx RUSTUP_HOME /opt/rust/.rustup
+set -gx ANSIBLE_LOCAL_TEMP /opt/ansible/tmp
+
 ### variables
 set path_journey ~/Documents/the_journey
 set path_dev ~/Documents/development
@@ -70,8 +75,6 @@ abbr --add cb "cargo build"
 abbr --add ct "cargo test"
 abbr --add ca "cargo add"
 abbr --add ci "cargo install"
-set -gx CARGO_HOME /opt/rust/.cargo
-set -gx RUSTUP_HOME /opt/rust/.rustup
 
 ### git
 abbr --add gs "git status"
