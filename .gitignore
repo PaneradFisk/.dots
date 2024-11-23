@@ -2,15 +2,15 @@
 *.log
 
 ### newsboat
-*.newsboat/cache.db
-*.newsboat/cache.db.lock
-*.newsboat/history.cmdline
+**/.newsboat/cache.db
+**/.newsboat/cache.db.lock
+**/.newsboat/history.cmdline
 
 ### cmus
-**cmus/search-history
-**cmus/command-history
-**cmus/lib.pl
-**cmus/cache
+**/cmus/search-history
+**/cmus/command-history
+**/cmus/lib.pl
+**/cmus/cache
 
 ### bullshit
 .vscode
