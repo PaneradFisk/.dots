@@ -1,14 +1,27 @@
 ---
 - name: Check if Rustup exists
   ansible.builtin.stat:
-    path: "{{ local_path_cargo }}"
+    path: "{{ rust_local_path_cargo }}"
+    # path: "{{ local_path_cargo }}"
   register: rustup
+
+- name: Create custom installation directories
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: "0755"
+  loop:
+    - "{{ rustup_home }}"
+    - "{{ cargo_home }}"
+
 
 - name: Download installer if not exists
   when: not rustup.stat.exists
   ansible.builtin.get_url:
-    url: "{{ url_rust_installer }}"
-    dest: "{{ local_path_rust_installer }}"
+    url: "{{ rust_url_installer }}"
+    dest: "{{ rust_local_path_installer }}"
+    # url: "{{ url_rust_installer }}"
+    # dest: "{{ local_path_rust_installer }}"
     mode: "0755"
     force: "yes"
   register: rustup_downloaded
@@ -16,5 +29,10 @@
 - name: Install Rust and Cargo if not installed
   when: rustup_downloaded.changed
   ansible.builtin.command:
-    cmd: "{{ local_path_rust_installer }} -y"
-    creates: "{{ local_path_cargo }}"
+    cmd: "{{ rust_local_path_installer }} -y"
+    creates: "{{ rust_local_path_cargo }}"
+    # cmd: "{{ local_path_rust_installer }} -y"
+    # creates: "{{ local_path_cargo }}"
+  environment:
+    CARGO_HOME: "{{ cargo_home }}"
+    RUSTUP_HOME: "{{ rustup_home }}"

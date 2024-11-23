@@ -70,6 +70,8 @@ abbr --add cb "cargo build"
 abbr --add ct "cargo test"
 abbr --add ca "cargo add"
 abbr --add ci "cargo install"
+set -gx CARGO_HOME /opt/rust/.cargo
+set -gx RUSTUP_HOME /opt/rust/.rustup
 
 ### git
 abbr --add gs "git status"
@@ -81,3 +83,4 @@ abbr --add gb "git checkout"
 # PATHs
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $CARGO_HOME/bin
