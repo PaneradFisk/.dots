@@ -1,31 +1,27 @@
-# make valid commands green instead of blue(?)
-set -gx fish_color_command green
-
-# No greeting
-set fish_greeting
-
-# set helix to be $EDITOR
-set EDITOR hx
-
 # fzf
-fzf --fish | source
-function fzf_ctrl_t
-    set selected_path (fzf --preview 'tree -C {} | head -200' --height 40% --border --bind 'ctrl-t:accept')
+# fzf --fish | source
+# function fzf_ctrl_t
+#     set selected_path (fzf --preview 'tree -C {} | head -200' --height 40% --border --bind 'ctrl-t:accept')
 
-    if test -n "$selected_path"
-        set dir_path (dirname "$selected_path")
-        tmux new-window "cd '$dir_path'; exec $SHELL"
-    end
-end
+#     if test -n "$selected_path"
+#         set dir_path (dirname "$selected_path")
+#         tmux new-window "cd '$dir_path'; exec $SHELL"
+#     end
+# end
 
 bind \ct fzf_ctrl_t
 
+
 ## global vars
+set -gx EDITOR hx
 set -gx CARGO_HOME /opt/rust/.cargo
 set -gx RUSTUP_HOME /opt/rust/.rustup
 set -gx ANSIBLE_LOCAL_TEMP /opt/ansible/tmp
+# make valid commands green instead of blue(?)
+set -gx fish_color_command green
 
 ### variables
+set fish_greeting # leave blank for no fish greeting
 set path_journey ~/Documents/the_journey
 set path_dev ~/Documents/development
 set path_film ~/Documents/film
@@ -84,6 +80,4 @@ abbr --add gb "git checkout"
 
 
 # PATHs
-fish_add_path $HOME/.cargo/bin
-fish_add_path $HOME/.local/bin
 fish_add_path $CARGO_HOME/bin
