@@ -1,17 +1,3 @@
-# fzf
-# fzf --fish | source
-# function fzf_ctrl_t
-#     set selected_path (fzf --preview 'tree -C {} | head -200' --height 40% --border --bind 'ctrl-t:accept')
-
-#     if test -n "$selected_path"
-#         set dir_path (dirname "$selected_path")
-#         tmux new-window "cd '$dir_path'; exec $SHELL"
-#     end
-# end
-
-bind \ct fzf_ctrl_t
-
-
 ## global vars
 set -gx EDITOR hx
 set -gx CARGO_HOME /opt/rust/.cargo
@@ -25,6 +11,9 @@ set fish_greeting # leave blank for no fish greeting
 set path_journey ~/Documents/the_journey
 set path_dev ~/Documents/development
 set path_film ~/Documents/film
+
+### keybinds
+bind \ct fzf_ctrl_t
 
 ### quality of life ###
 #### abbreviations
@@ -77,6 +66,9 @@ abbr --add gs "git status"
 abbr --add gp "git push"
 abbr --add gc "git commit -m"
 abbr --add gb "git checkout"
+
+# fzf
+# fzf --fish | source
 
 
 # PATHs
