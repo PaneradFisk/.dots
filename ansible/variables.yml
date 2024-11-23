@@ -2,22 +2,23 @@
 home: "/home/andreb"
 local_path_dirs:
   - "{{ home }}/Documents/development"
-  - "{{ home }}/.installers"
   - "/usr/local/share/fonts/FiraCodeNerdFont"
+  # - "{{ home }}/.installers"
 
 rust_rustup_home: "/opt/rust/.rustup"
 rust_cargo_home: "/opt/rust/.cargo"
 rust_local_path_installer: "/opt/rust/sh.rustup.rs"
-rust_local_path_cargo: "{{ cargo_home }}/bin/rustup"
+rust_local_path_cargo: "{{ rust_cargo_home }}/bin/rustup"
 rust_url_installer: "https://sh.rustup.rs"
+rust_cargo_bin: "{{ rust_cargo_home }}/bin"
 
-local_path_rust_installer: "{{ home }}/.installers/sh.rustup.rs"
-local_path_cargo: "{{ home }}/.cargo/bin/rustup"
+# local_path_rust_installer: "{{ home }}/.installers/sh.rustup.rs"
+# local_path_cargo: "{{ home }}/.cargo/bin/rustup"
 
 url_repo_rpm_fusion_free: "http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_major_version }}.noarch.rpm"
 url_repo_rpm_fusion_non_free: "http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_major_version }}.noarch.rpm"
 url_repo_flathub: "https://flathub.org/repo/flathub.flatpakrepo"
-url_rust_installer: "https://sh.rustup.rs"
+# url_rust_installer: "https://sh.rustup.rs"
 
 apps_stow: "apps"
 
