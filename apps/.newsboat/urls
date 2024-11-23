@@ -42,6 +42,7 @@ https://blog.mozilla.org/en/feed/ use "~Mozilla" !
 https://bitwarden.com/blog/ use "~Bitwarden" !
 https://helix-editor.com/news/ use "~Helix" !
 https://www.ansible.com/blog/# use "~Ansible" !
+https://blog.codeberg.org/ use "~Codeberg" !
 
 
 https://fabiensanglard.net/rss.xml misc !

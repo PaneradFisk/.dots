@@ -19,12 +19,12 @@ indent = { tab-width = 2, unit = "  " }
 [[language]]
 name = "rust"
 formatter = { command = "rustfmt", args = ["--stdin"] }
-indent = { tab-width = 4, unit = "    " }
+indent = { tab-width = 2, unit = "  " }
 language-servers = ["rust-analyzer"]
 
 [[language]]
 name = "python"
 language-servers = ["pylsp"]
 formatter = { command = "sh", args = ["-c", "isort --stdout | autopep8 --stdin --stdout"] }
-indent = { tab-width = 4, unit = "    " }
+indent = { tab-width = 2, unit = "  " }
 

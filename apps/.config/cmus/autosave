@@ -1,12 +1,12 @@
 set aaa_mode=all
 set altformat_current= %F 
-set altformat_playlist= %f%= %d 
+set altformat_playlist= %f%= %d %{?X!=0?%3X ?    }
 set altformat_title=%f
 set altformat_trackwin= %f%= %d 
 set auto_expand_albums_follow=true
 set auto_expand_albums_search=true
 set auto_expand_albums_selcur=true
-set auto_hide_playlists_panel=false
+set auto_hide_playlists_panel=true
 set auto_reshuffle=true
 set block_key_paste=true
 set buffer_seconds=10
@@ -20,6 +20,9 @@ set color_separator=246
 set color_statusline_attr=default
 set color_statusline_bg=237
 set color_statusline_fg=72
+set color_statusline_progress_attr=default
+set color_statusline_progress_bg=blue
+set color_statusline_progress_fg=white
 set color_titleline_attr=default
 set color_titleline_bg=236
 set color_titleline_fg=142
@@ -61,13 +64,16 @@ set dsp.ao.wav_dir=/home/andreb/Documents/music
 set follow=true
 set format_clipped_text=…
 set format_current= %a - %t%= [%l %y] 
+set format_heading_album=%a - %l%= %y %{duration}
+set format_heading_artist=%a%= %{duration}
+set format_heading_playlist=%{?!panel?Playlist - }%{title}%= %{duration}    
 set format_playlist=%-25%a %-30%t %=[%-16%l %y] [%d] %{?X!=0?%3X?  0}
 set format_playlist_va=%-21%a %t (%a)%= %y %d %{?X!=0?%3X?0}
-set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{total} %{?bpm>0?at %{bpm} BPM }%{?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle} 
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}%{?bpm>0?at %{bpm} BPM }%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%= %{?repeat_current?repeat current?%{?play_library?%{?playlist_mode!="all"?%{playlist_mode} from }%{?play_sorted?sorted }library?playlist}} | %{?volume>=0?%{?lvolume!=rvolume?%{lvolume}%% %{rvolume}?%{volume}}%% | }%1{continue}%1{follow}%1{repeat}%1{shuffle} 
 set format_title=[%{duration}] - %a - %t
-set format_trackwin=%3n. %t%= %y %d 
-set format_trackwin_album= %l %= %{albumduration} 
-set format_trackwin_va=%3n. %t (%a)%= %y %d 
+set format_trackwin=%3n. %t%= %d 
+set format_trackwin_album= %l %= %y %{duration} 
+set format_trackwin_va=%3n. %t (%a)%= %d 
 set format_treewin=  %l
 set format_treewin_artist=%a
 set icecast_default_charset=ISO-8859-1
@@ -96,8 +102,9 @@ set passwd=
 set pause_on_output_change=false
 set pl_env_vars=
 set pl_sort=
-set play_library=false
+set play_library=true
 set play_sorted=true
+set progress_bar=line
 set repeat=false
 set repeat_current=false
 set replaygain=disabled
@@ -106,6 +113,7 @@ set replaygain_preamp=0.000000
 set resume=false
 set rewind_offset=5
 set scroll_offset=2
+set search_resets_position=true
 set set_term_title=true
 set show_all_tracks=true
 set show_current_bitrate=false
