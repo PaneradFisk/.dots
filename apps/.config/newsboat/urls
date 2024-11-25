@@ -39,16 +39,10 @@ https://api.mangaupdates.com/v1/series/64146327947/rss manga "~World's Greatest 
 
 
 https://blog.mozilla.org/en/feed/ use "~Mozilla" !
-https://bitwarden.com/blog/ use "~Bitwarden" !
-https://helix-editor.com/news/ use "~Helix" !
-https://www.ansible.com/blog/# use "~Ansible" !
-https://blog.codeberg.org/ use "~Codeberg" !
-
+https://bitwarden.com/blog/feed.xml use "~Bitwarden" !
+https://helix-editor.com/atom.xml use "~Helix" !
+https://www.ansible.com/blog/rss.xml use "~Ansible" !
+https://blog.codeberg.org/feeds/all.atom.xml use "~Codeberg" !
 
 https://fabiensanglard.net/rss.xml misc !
-
-
-
-
-
 
