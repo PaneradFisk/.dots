@@ -57,32 +57,32 @@ apps_cargo:
 #  - markdown-oxide # LSP-markdown https://github.com/Feel-ix-343/markdown-oxide
 
 dnf_bloatware:
-  - akregator
   - dragon
   - elisa-player
   - filelight
-  - gwenview
   - ibus-typing-booster
-  - kaddressbook
   - kamoso
   - kate
   - kcharselect
-  - kde-connect
   - kmahjongg
-  - kmail
   - kmines
   - kmousetool
   - kmouth
-  - korganizer
-  - kolourpaint
-  - kontact
   - kpat
-  - krdc
-  - krfb
-  - ktnef
   - kwrite
-  - libreoffice-core
   - mediawriter
   - neochat
   - okular
   - skanpage
+  - akregator
+  - gwenview
+  - kaddressbook
+  - kde-connect
+  - kmail
+  - korganizer
+  - kolourpaint
+  - kontact
+  - krdc
+  - krfb
+  - ktnef
+  - libreoffice-core

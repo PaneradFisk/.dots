@@ -1,10 +1,12 @@
 ## step-by-step to use these files.
 (they are 100% made for myself and nobody else, use at your own risk)
-1. sudo dnf install ansible git
-2. export ANSIBLE_LOCAL_TEMP=/opt/ansible/tmp
-3. cd ~
-4. git clone https://github.com/PaneradFisk/.dots.git
-5. sudo ansible-playbook ~/.dots/ansible/setup.yml
+```bash
+sudo dnf install ansible git
+export ANSIBLE_LOCAL_TEMP=/opt/ansible/tmp
+cd ~
+git clone https://github.com/PaneradFisk/.dots.git
+sudo ansible-playbook ~/.dots/ansible/main.yml
+```
 ***
 
 
