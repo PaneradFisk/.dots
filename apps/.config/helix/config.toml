@@ -1,4 +1,7 @@
 theme = "catppuccin_frappe"
+# theme = "everforest_dark"
+# theme = "varua"
+# theme = "tokyonight_storm"
 
 [editor]
 bufferline = "multiple"

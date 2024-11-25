@@ -3,6 +3,7 @@ set -gx EDITOR hx
 set -gx CARGO_HOME /opt/rust/.cargo
 set -gx RUSTUP_HOME /opt/rust/.rustup
 set -gx ANSIBLE_LOCAL_TEMP /opt/ansible/tmp
+set -gx GO_HOME /opt/go
 # make valid commands green instead of blue(?)
 set -gx fish_color_command green
 
@@ -74,3 +75,4 @@ abbr --add gb "git checkout"
 
 # PATHs
 fish_add_path $CARGO_HOME/bin
+fish_add_path $GO_HOME/bin
