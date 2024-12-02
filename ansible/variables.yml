@@ -27,14 +27,11 @@ apps_dnf:
   - cmus # https://github.com/cmus/cmus
   - helix # https://github.com/helix-editor/helix
   - newsboat # https://github.com/newsboat/newsboat
-  - solaar # logitech options replacement # https://github.com/pwr-Solaar/Solaar
   - tmux # https://github.com/tmux/tmux
   - bat # https://github.com/sharkdp/bat
   - eza # https://github.com/eza-community/eza
   - ripgrep # https://github.com/BurntSushi/ripgrep
   - tealdeer # tlrc not available using dnf as of writing # https://github.com/tealdeer-rs/tealdeer
-  - discord # https://github.com/discord
-  - qimgv # https://github.com/easymodo/qimgv
   - firefox
   - fd-find # https://github.com/sharkdp/fd
   - fzf # https://github.com/junegunn/fzf
@@ -42,11 +39,14 @@ apps_dnf:
   - akmod-nvidia # nvidia graphics drivers, requires rpmfusion non-free
 
 apps_flatpak:
+  - com.discordapp.Discord
   - com.bitwarden.desktop
+  - com.github.easymodo.qimgv
   - com.notepadqq.Notepadqq
   - com.spotify.Client
   - com.valvesoftware.Steam
-  - org.kde.Krita
+  - io.github.pwr_solaar.solaar
+  - org.kde.krita
   - org.qbittorrent.qBittorrent
   - org.signal.Signal
   - org.videolan.VLC

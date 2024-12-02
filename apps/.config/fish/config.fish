@@ -2,8 +2,8 @@
 set -gx EDITOR hx
 set -gx CARGO_HOME /opt/rust/.cargo
 set -gx RUSTUP_HOME /opt/rust/.rustup
-set -gx ANSIBLE_LOCAL_TEMP /opt/ansible/tmp
 set -gx GO_HOME /opt/go
+set -gx ANSIBLE_LOCAL_TEMP /opt/ansible/tmp
 # make valid commands green instead of blue(?)
 set -gx fish_color_command green
 
@@ -27,9 +27,11 @@ abbr --add speed thokr # typing speedtest
 abbr --add rss newsboat # feed reader
 abbr --add c clear
 abbr --add e exit
+abbr --add t tmux
 abbr --add d dict
 abbr --add show "lal | rg"
 abbr --add fp flatpak
+abbr --add jo joshuto
 abbr --add cat bat
 abbr --add ccat cat
 
@@ -63,6 +65,8 @@ abbr --add ct "cargo test"
 abbr --add ca "cargo add"
 abbr --add ci "cargo install"
 
+### python
+abbr --add py python3
 ### git
 abbr --add gs "git status"
 abbr --add gp "git push"
@@ -74,5 +78,9 @@ abbr --add gb "git checkout"
 
 
 # PATHs
+fish_add_path $RUSTUP_HOME/bin
 fish_add_path $CARGO_HOME/bin
 fish_add_path $GO_HOME/bin
+
+# zoxide
+zoxide init fish | source
