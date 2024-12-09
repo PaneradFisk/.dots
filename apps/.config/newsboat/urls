@@ -14,6 +14,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA you
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAL3JXZSzSm8AlZyD3nQdBA youtube "~Primitive Technology" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcGXEidw0qjNdq7Gii8gHgg youtube "~Project Kamp" !
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9zY_E8mcAo_Oq772LEZq8Q youtube "~The First Take" ! 
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYXGHivsMPVU-h-M_wd9m3Q youtube "~The Ocean Cleanup" !
 
 https://api.mangaupdates.com/v1/series/33058312529/rss manga "~Healing Life Through Camping In Another World" !
 https://api.mangaupdates.com/v1/series/28672174717/rss manga "~Hunter Academy's Strongest Battle God" !
@@ -45,4 +46,4 @@ https://www.ansible.com/blog/rss.xml use "~Ansible" !
 https://blog.codeberg.org/feeds/all.atom.xml use "~Codeberg" !
 
 https://fabiensanglard.net/rss.xml misc !
-
+https://theoceancleanup.com/feed/index.xml misc "~TheOceanCleanup" !
