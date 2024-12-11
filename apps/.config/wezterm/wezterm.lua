@@ -7,7 +7,6 @@ config.enable_wayland = true
 config.term = 'xterm-256color'
 config.automatically_reload_config = true
 
-
 config.color_scheme = 'catppuccin-frappe'
 config.audible_bell = 'Disabled'
 config.detect_password_input = true
@@ -32,7 +31,6 @@ config.scrollback_lines = 50000
 
 -- cursor
 config.default_cursor_style = 'SteadyBar'
-
 
 -- mouse
 config.hide_mouse_cursor_when_typing = true

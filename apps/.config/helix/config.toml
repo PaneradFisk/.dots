@@ -20,6 +20,13 @@ lsp.display-inlay-hints = true
 cursor-shape.insert = "bar"
 cursor-shape.select = "underline"
 
+[editor.soft-wrap]
+enable = true
+max-wrap = 40
+max-indent-retain = 40
+wrap-indicator = ""
+wrap-at-text-width = false
+
 [editor.auto-pairs]
 '(' = ')'
 '{' = '}'
